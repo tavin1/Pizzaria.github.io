@@ -1,0 +1,175 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto */
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+  background-color: #ff0000;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo do conteúdo principal */
+#menu {
+  margin-top: 20px;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menu ul li {
+  flex: 0 0 calc(50% - 20px);
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#menu ul li img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#menu ul li h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#menu ul li p {
+  margin: 0;
+}
+
+.btn-add-to-cart {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-confirm,
+.btn-remove,
+.btn-back {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo do carrinho de compras */
+#carrinho {
+  margin-top: 40px;
+}
+
+#carrinho h2 {
+  margin: 0;
+}
+
+#carrinho-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo responsivo */
+@media screen and (max-width: 768px) {
+  #menu ul li {
+    flex: 0 0 100%;
+  }
+}
+
+/* ...outros estilos... */
+
+/* Estilo para a imagem da pizza */
+#introducao img {
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra suave */
+  max-width: 50%; /* Define uma largura máxima de 100% */
+  height: auto; /* Mantém a proporção original da imagem */
+  transition: transform 0.3s ease-in-out; /* Adiciona transição suave */
+  display: block; /* Altera o comportamento de layout para ser centralizado */
+  margin: 20px auto 0; /* Centraliza horizontalmente e adiciona margem superior */
+}
+
+/* Efeito de hover na imagem */
+#introducao img:hover {
+  transform: scale(1.1); /* Amplia ligeiramente a imagem no hover */
+}
+
+/* ...outros estilos... */
+
+/* ...outros estilos... */
+
+/* Estilo para os itens do menu */
+header nav ul li {
+  border: 1px solid black; /* Adiciona uma borda sólida */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  padding: 5px 10px; /* Adiciona espaçamento interno */
+}
+
+
+
+/* ...outros estilos... */
+

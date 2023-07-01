@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizzaria Delícia - Cardápio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Pizzaria Delícia</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Pedidos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Cardápio</h2>
+    <ul>
+      <li>
+        <img src="pizza1.jpg" alt="Pizza Frango">
+        <h3>Pizza Frango</h3>
+        <p>Molho de tomate, queijo mussarela, frango desfiado, catupiry.</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Frango')">Adicionar ao Carrinho</button>
+      </li>
+      <li>
+        <img src="pizza2.jpg" alt="Pizza Calabresa">
+        <h3>Pizza Calabresa</h3>
+        <p>Molho de tomate, queijo mussarela, calabresa, cebola.</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Calabresa')">Adicionar ao Carrinho</button>
+      </li>
+      <li>
+        <img src="pizza3.jpg" alt="Pizza Quatro Queijos">
+        <h3>Pizza Quatro Queijos</h3>
+        <p>Molho de tomate, queijos mussarela, provolone, gorgonzola, parmesão.</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Quatro Queijos')">Adicionar ao Carrinho</button>
+      </li>
+      <li>
+        <img src="pizza4.jpg" alt="Pizza Pepperoni">
+        <h3>Pizza Pepperoni</h3>
+        <p>Molho de tomate, queijo mussarela, pepperoni.</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Pepperoni')">Adicionar ao Carrinho</button>
+      </li>
+      <li>
+        <img src="pizza5.jpg" alt="Pizza Doce">
+        <h3>Pizza Doce</h3>
+        <p>Chocolate, leite condensado, morangos.</p>
+        <button class="btn-add-to-cart" onclick="addToCart('Doce')">Adicionar ao Carrinho</button>
+      </li>
+    </ul>
+    <button class="btn-confirm" onclick="confirmarPedido()">Confirmar Pedido</button>
+    <button class="btn-remove" onclick="excluirItensCarrinho()">Excluir Itens do Carrinho</button>
+    <button class="btn-back" onclick="voltarAoMenu()">Voltar ao Menu Inicial</button>
+  </section>
+
+  <section id="carrinho">
+    <h2>Carrinho de Compras</h2>
+    <ul id="carrinho-items">
+      <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Pizzaria Delícia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
